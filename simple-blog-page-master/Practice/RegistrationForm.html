@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        body{
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-right:100px;
+            height: 100vh;
+        }
+        .container{
+            background-color: aliceblue;
+           padding: 40px;
+           border-radius: 10px;
+           width: 380px;
+           text-align: center;
+          margin: 20px;
+          box-shadow: 20px;
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        }
+        input{
+            width: 100%;
+            border-radius: 5px;
+            padding: 12px;
+            margin: 15px 0;
+            border: 1px solid #ccc;
+        }
+        button{
+            width: 60%;
+            padding: 10px;
+            background: #ff5733;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background: #c70039;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Register</h2>
+        <form action="/Practice/RegistrationForm.html" method="post">
+            <input type="text" id="namr" name="name" placeholder="Full  name">
+            <input type="text" id ="gmail" name="gmail" placeholder="gmail">
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="password" name="confirmPassword" placeholder="Confirm Password" required>
+            <button type="submit">Sign Up</button> 
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+ /* Base Styling */
+ body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #f8e1e1, #fafafa);
+    padding: 40px 15px;
+    color: #333;
+  }
+
+  h2 {
+    color: #af4261;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .content {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    max-width: 650px;
+    margin: 20px auto;
+    transition: transform 0.2s;
+  }
+
+  .content:hover {
+    transform: translateY(-5px);
+  }
+
+  p {
+    font-size: 16px;
+    color: #555;
+  }
+
+  .tip-section {
+    display: none;
+    margin-top: 15px;
+    background: #ffe9e9;
+    padding: 15px;
+    border-left: 5px solid #af4261;
+    border-radius: 8px;
+    animation: fadeIn 0.5s ease forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .read-more-btn {
+    background: linear-gradient(135deg, #af4261, #f3ec78);
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s;
+  }
+
+  .read-more-btn:hover {
+    background: linear-gradient(135deg, #f3ec78, #af4261);
+    color: #333;
+  }

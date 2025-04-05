@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Savory Secrets & Cooking Tips</title>
+  <link rel="stylesheet" href="Tips.css"></link>
+</head>
+<body>
+  <div class="content">
+    <h2>Tip 1: Perfectly Crispy Vegetables</h2>
+    <p>Want crispy stir-fried veggies?</p>
+    <button class="read-more-btn" onclick="toggleTip(0)">Read More</button>
+    <div class="tip-section" id="tip-section-0">
+      <p>Cook veggies over high heat and don't overcrowd the pan to maintain crispiness.</p>
+    </div>
+  </div>
+
+  <div class="content">
+    <h2>Tip 2: Flavorful Soups</h2>
+    <p>Want to enhance soup flavors?</p>
+    <button class="read-more-btn" onclick="toggleTip(1)">Read More</button>
+    <div class="tip-section" id="tip-section-1">
+      <p>Roast your vegetables beforehand to intensify the soup's flavor.</p>
+    </div>
+  </div>
+
+  <div class="content">
+    <h2>Tip 3: Fluffy Pancakes</h2>
+    <p>How to make fluffy pancakes?</p>
+    <button class="read-more-btn" onclick="toggleTip(2)">Read More</button>
+    <div class="tip-section" id="tip-section-2">
+      <p>Don't overmix the batter—leave it slightly lumpy for the best results.</p>
+    </div>
+  </div>
+
+  <div class="content">
+    <h2>Tip 4: Juicy Grilled Meat</h2>
+    <p>How to grill meat perfectly?</p>
+    <button class="read-more-btn" onclick="toggleTip(3)">Read More</button>
+    <div class="tip-section" id="tip-section-3">
+      <p>Let the meat rest after grilling to keep it juicy and flavorful.</p>
+    </div>
+  </div>
+
+  <div class="content">
+    <h2>Tip 5: Creamier Pasta Sauce</h2>
+    <p>Want creamier pasta sauce?</p>
+    <button class="read-more-btn" onclick="toggleTip(4)">Read More</button>
+    <div class="tip-section" id="tip-section-4">
+      <p>Reserve some pasta water and mix it into the sauce for extra creaminess.</p>
+    </div>
+  </div>
+
+  <div class="content">
+    <h2>Tip 6: Perfect Boiled Eggs</h2>
+    <p>How to boil eggs perfectly?</p>
+    <button class="read-more-btn" onclick="toggleTip(5)">Read More</button>
+    <div class="tip-section" id="tip-section-5">
+      <p>Use an ice bath after boiling to make peeling easier.</p>
+    </div>
+  </div>
+
+  <script>
+    function toggleTip(index) {
+      const section = document.getElementById(`tip-section-${index}`);
+      section.style.display = section.style.display === 'none' || section.style.display === '' ? 'block' : 'none';
+    }
+  </script>
+</body>
+</html>

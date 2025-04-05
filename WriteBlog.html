@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Share Your Recipe Story</title>
+  <link rel="stylesheet" href="WriteBlog.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Share Your Delicious Recipe</h2>
+    <form id="blogForm" onsubmit="handleSubmit(event)">
+      <label for="title">Blog Title</label>
+      <input type="text" id="title" name="title" placeholder="Enter your blog title" required>
+
+      <label for="ingredients">Ingredients</label>
+      <textarea id="ingredients" name="ingredients" placeholder="List the ingredients required" required></textarea>
+
+      <label for="recipe">Recipe Instructions</label>
+      <textarea id="recipe" name="recipe" placeholder="Write the cooking instructions here" required></textarea>
+
+      <label for="fileUpload">Upload Image/File</label>
+      <input type="file" id="fileUpload" name="fileUpload" required>
+
+      <button type="submit" class="submit-btn">Submit Recipe</button>
+    </form>
+  </div>
+  <script src="WriteBlog.js"></script>
+</body>
+</html>
